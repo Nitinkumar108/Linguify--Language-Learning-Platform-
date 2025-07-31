@@ -11,7 +11,7 @@ import ChatPage from "./pages/ChatPage.jsx";
 import toast, { Toaster } from "react-hot-toast";
 import axios from "axios";
 import { useQuery } from "@tanstack/react-query";
-import { useThemeStore } from "./store/useThemestore.js";
+import { useThemeStore } from "./store/useThemeStore.js";
 import PageLoader from "./components/pageLoader.jsx";
 import useAuthUser from "./hooks/useAuthUser.js";
 
