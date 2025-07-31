@@ -8,12 +8,12 @@ export async function getRecommendedUsers(req, res) {
         const recommendedUsers = await User.find({
             $and:[
                 { _id: { $ne: currentUserId } }, // Exclude current user
-                {$id: { $nin: currentUser.friends } }, // Exclude friends
+                { _id: { $nin: currentUser.friends } }, // Exclude friends
                 {isOnboarded: true}, // Only include onboarded users
             ]
         });
 
-        res.status(200).json({recommendedUsers});
+        res.status(200).json(recommendedUsers);
            
 
     } catch (error) {
