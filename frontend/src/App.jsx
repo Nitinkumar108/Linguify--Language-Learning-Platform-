@@ -12,7 +12,7 @@ import toast, { Toaster } from "react-hot-toast";
 import axios from "axios";
 import { useQuery } from "@tanstack/react-query";
 import { useThemeStore } from "./store/useThemeStore.js";
-import PageLoader from "./components/pageLoader.jsx";
+import PageLoader from "./components/PageLoader.jsx";
 import useAuthUser from "./hooks/useAuthUser.js";
 
 import Layout from "./components/Layout.jsx";
